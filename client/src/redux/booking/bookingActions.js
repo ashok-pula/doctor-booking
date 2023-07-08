@@ -38,17 +38,33 @@ const updateBookingAction = (data) => {
   };
 };
 
+//  back end ulr is https://doctor-booking-u9cd.onrender.com/
+
 //async handlers  redux thunk
 export const fetchBookings = () => (dispatch) => {
+  // return axios
+  //   .get("http://localhost:5000/api/booking")
+  //   .then((response) => dispatch(fetchBookingsAction(response.data)))
+  //   .catch((error) => dispatch(failureBookingAction(error.response.data)));
+
   return axios
-    .get("http://localhost:5000/api/booking")
+    .get("https://doctor-booking-u9cd.onrender.com/api/booking")
     .then((response) => dispatch(fetchBookingsAction(response.data)))
     .catch((error) => dispatch(failureBookingAction(error.response.data)));
 };
 
 export const postBooking = (data) => (dispatch) => {
+  // return axios
+  //   .post("http://localhost:5000/api/booking", data)
+  //   .then((response) => dispatch(postBookingAction(response.data)))
+  //   .catch((error) => {
+  //     dispatch(failureBookingAction(error.response.data));
+  //   });
+
+  //backend url after hosting to render hosting website
+
   return axios
-    .post("http://localhost:5000/api/booking", data)
+    .post("https://doctor-booking-u9cd.onrender.com/api/booking", data)
     .then((response) => dispatch(postBookingAction(response.data)))
     .catch((error) => {
       dispatch(failureBookingAction(error.response.data));
@@ -56,8 +72,14 @@ export const postBooking = (data) => (dispatch) => {
 };
 
 export const deleteBooking = (id) => (dispatch) => {
+  // return axios
+  //   .delete("http://localhost:5000/api/booking/" + id)
+  //   .then((response) =>
+  //     dispatch(deleteBookingAction({ data: response.data, id }))
+  //   )
+  //   .catch((error) => dispatch(failureBookingAction(error.response.data)));
   return axios
-    .delete("http://localhost:5000/api/booking/" + id)
+    .delete("https://doctor-booking-u9cd.onrender.com/api/booking/" + id)
     .then((response) =>
       dispatch(deleteBookingAction({ data: response.data, id }))
     )
@@ -65,8 +87,13 @@ export const deleteBooking = (id) => (dispatch) => {
 };
 
 export const updateBooking = (data, id) => (dispatch) => {
+  // return axios
+  //   .put("http://localhost:5000/api/booking/" + id, data)
+  //   .then((response) => dispatch(updateBookingAction(response.data)))
+  //   .catch((error) => dispatch(failureBookingAction(error.response.data)));
+
   return axios
-    .put("http://localhost:5000/api/booking/" + id, data)
+    .put("https://doctor-booking-u9cd.onrender.com/api/booking/" + id, data)
     .then((response) => dispatch(updateBookingAction(response.data)))
     .catch((error) => dispatch(failureBookingAction(error.response.data)));
 };
