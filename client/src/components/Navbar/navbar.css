@@ -1,0 +1,13 @@
+.navbarContainer {
+  padding: 20px;
+  margin-bottom: 10px;
+  background: rgb(75, 12, 223);
+  background: linear-gradient(
+    90deg,
+    rgba(75, 12, 223, 1) 46%,
+    rgba(132, 0, 255, 1) 49%
+  );
+}
+.navbarHeading {
+  color: white;
+}

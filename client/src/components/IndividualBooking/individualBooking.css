@@ -1,0 +1,97 @@
+.individualBooking {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 40px;
+  border: 1px solid gray;
+  background-color: white;
+  padding: 10px;
+}
+.patientDetails {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.patientImg {
+  height: 40px;
+  width: 40px;
+}
+.nameDetails {
+  display: flex;
+  gap: 3px;
+  flex-direction: column;
+}
+.patientName {
+  font-size: 14px;
+  font-weight: bold;
+}
+.ageDetails {
+  display: flex;
+}
+.patientAge {
+  font-size: 10px;
+}
+.patientGender {
+  font-size: 10px;
+}
+.consult {
+  background-color: rgb(12, 155, 12);
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+.revisit {
+  padding: 5px;
+  border-radius: 4px;
+  background-color: blue;
+  color: white;
+}
+.timeDetails {
+  display: flex;
+  gap: 3px;
+  flex-direction: column;
+}
+.time {
+  font-weight: bold;
+  font-size: 14px;
+}
+.date {
+  font-size: 10px;
+}
+.phoneDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.phone {
+  font-weight: bold;
+  font-size: 14px;
+}
+.contact {
+  cursor: pointer;
+  color: blue;
+}
+.doctorName {
+  font-weight: bold;
+}
+.buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.edit {
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  color: black;
+  background-color: rgb(241, 241, 12);
+}
+.delete {
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  background-color: rgb(230, 92, 92);
+}
